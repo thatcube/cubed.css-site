@@ -1,0 +1,24 @@
+@import "../assets/cubed-css/variables";
+
+header  {
+    li {
+        a {
+            text-decoration: none;
+            color: $gray;
+            &.active {
+                color: $black;
+                border-bottom: 0.1875rem solid $black;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+.content {
+    grid-area: content;
+}
+header {
+    grid-area: header;
+}

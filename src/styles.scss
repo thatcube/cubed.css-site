@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "assets/cubed-css/cubed.scss";
+
+li {
+    list-style: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-template-areas: "header" "content";
+}
