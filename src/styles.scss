@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "../cubed-css/cubed.scss";
+@import "../cubed-css/_cubed.scss";
 
 li {
     list-style: none;
@@ -10,4 +10,5 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 1fr;
     grid-template-areas: "header" "content";
+    color: $gray;
 }
