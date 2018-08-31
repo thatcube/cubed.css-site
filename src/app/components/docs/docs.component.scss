@@ -3,13 +3,14 @@
 .docs__grid {
     display: grid;
     height: 100%;
-    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-columns: 10rem 1.7fr;
     grid-template-rows: 1fr;
     grid-template-areas: "docs__sidebar docs__content";
 }
   
 .docs__sidebar { 
     grid-area: docs__sidebar;
+    padding: 1rem 1rem 1rem 0;
     ul {
         padding: 0;
         margin: 0;

@@ -11,6 +11,7 @@ import { GettingStartedComponent } from './components/getting-started/getting-st
 import { CardComponent } from './components/card/card.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FormComponent } from './components/form/form.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormComponent } from './components/form/form.component';
     GettingStartedComponent,
     CardComponent,
     ButtonComponent,
-    FormComponent
+    FormComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,

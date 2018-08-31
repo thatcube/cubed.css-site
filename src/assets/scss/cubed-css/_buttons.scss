@@ -1,12 +1,19 @@
+@import 'mixins/buttons';
 .btn {
     cursor: pointer;
+    display: inline-block;
     border: none;
     border-radius: $border-radius-base;
     transition: .3s ease box-shadow;
-    height: 2em;
-    padding: 0 1em;
+    padding: 0.75em 2em;
     font-size: 1em;
+    line-height: 1;
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    border: 0.0625em solid transparent;
     &:hover {
         text-decoration: none;
     }
@@ -83,34 +90,32 @@
         }
     }
     &.-round {
-        border-radius: 2rem;
+        border-radius: 10rem;
     }
     &.-square {
         border-radius: 0;
     }
-    &.-small {
-        height: 1.5rem;
-        padding: 0 0.5rem;
+    &.-xs {
+        font-size: 0.75em;
+        padding: 0.5em 1em;
+    }
+    &.-sm {
+        font-size: 0.875rem;
+        padding: 0.625em 1.25em;
+    }
+    &.-md {
+        font-size: 1rem
+    }
+    &.-lg {
+        font-size: 1.125rem;
+        padding: 0.875em 1.5em;
+    }
+    &.-xl {
+        font-size: 1.25rem;
+        padding: 1em 1.75em;
     }
     &:disabled {
         opacity: 0.5;
         cursor: not-allowed;
-    }
-}
-
-.buttons {
-    h3 {
-        margin-top: 3rem;
-        margin-bottom: 0.5rem;
-    }
-    .button {
-        margin-bottom: 1rem;
-        margin-right: 0.5rem;
-    }
-    .light, .dark {
-        padding: 1rem;
-        display: inline-block;
-        margin: 0.5rem;
-        border: none;
     }
 }

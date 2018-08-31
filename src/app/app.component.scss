@@ -4,9 +4,13 @@ header  {
         a {
             text-decoration: none;
             color: $gray;
+            transition: .2s ease color;
             &.active {
                 color: $black;
-                border-bottom: 0.1875rem solid $black;
+                font-weight: bold;
+            }
+            &:hover {
+                color: $gray-darker;
             }
         }
     }
@@ -19,5 +23,16 @@ header  {
     grid-area: content;
 }
 header {
-    grid-area: header;
+    grid-area: header;                 
+    width: 100%;
+    display: flex;
+    position: relative;
+    &:before {
+        background: $background-light;
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        z-index: -1;
+    }
 }

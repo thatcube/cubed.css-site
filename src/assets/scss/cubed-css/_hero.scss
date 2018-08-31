@@ -1,0 +1,30 @@
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__body {
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 3rem 1.5rem;
+    }
+    &.md .hero__body {
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+    &.lg .hero__body {
+        padding-bottom: 16rem;
+        padding-top: 16rem;
+    }
+    &.xl .hero__body{
+        padding-bottom: 24rem;
+        padding-top: 24rem;
+    }
+    &.fullscreen {
+        min-width: 100vh;
+        & .hero__body {
+            align-items: center;
+            display: flex;
+        }
+    }
+}
