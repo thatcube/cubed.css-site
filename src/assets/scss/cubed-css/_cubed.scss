@@ -17,3 +17,11 @@
 .wrap {
     max-width: $bp-lg;
 }
+
+code {
+    background-color: mix($background, $gray-light, 95%);
+    color: $primary;
+    font-size: .875em;
+    font-weight: 400;
+    padding: .25em .5em .25em;
+}

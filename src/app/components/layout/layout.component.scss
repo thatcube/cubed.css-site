@@ -1,5 +1,9 @@
 @import 'variables';
 
-div {
+.col p {
     background: $primary;
+    color: $white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: $border-radius-small;
 }

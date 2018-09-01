@@ -4,10 +4,11 @@
 // The advantage of using REM's is that someone can change their font-size on their browser, and the entire website will respond to that change
 
 //colors
-$gray: #757575;
-$gray-darker: mix($gray, black, 50%);
 $black: #000;
 $white: #fff;
+$gray: #757575;
+$gray-light: mix($gray, $white, 50%);
+$gray-dark: mix($gray, $black, 50%);
 
 $primary: #007fff;
 $complementary: #007bff;
