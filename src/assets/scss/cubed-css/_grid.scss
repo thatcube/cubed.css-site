@@ -527,7 +527,7 @@
 
 @include until(sm) {
   .container {
-    max-width: $bp-xs;
+    max-width: $bp-sm;
   }
   .start-xs {
     justify-content: flex-start;
