@@ -1,5 +1,11 @@
 @import 'variables';
+@import 'mixins/breakpoints';
 
+@include until(sm) {
+    .hero .btn {
+        width: 100%;
+    }
+}
 a.block {
     color: $gray;
     display: block;

@@ -8,17 +8,19 @@
         flex-shrink: 0;
         padding: 3rem 1.5rem;
     }
-    &.md .hero__body {
-        padding-bottom: 8rem;
-        padding-top: 8rem;
-    }
-    &.lg .hero__body {
-        padding-bottom: 16rem;
-        padding-top: 16rem;
-    }
-    &.xl .hero__body{
-        padding-bottom: 24rem;
-        padding-top: 24rem;
+    @include at-least(sm) {
+        &.md .hero__body {
+            padding-bottom: 8rem;
+            padding-top: 8rem;
+        }
+        &.lg .hero__body {
+            padding-bottom: 16rem;
+            padding-top: 16rem;
+        }
+        &.xl .hero__body{
+            padding-bottom: 24rem;
+            padding-top: 24rem;
+        }
     }
     &.fullscreen {
         min-width: 100vh;

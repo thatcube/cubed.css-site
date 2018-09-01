@@ -1,1 +1,11 @@
-// utilities will go here
+.sr-only {
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 0.001rem !important;
+    height: 0.001rem !important;
+    clip: rect(0,0,0,0)  !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    border: none !important;
+}
