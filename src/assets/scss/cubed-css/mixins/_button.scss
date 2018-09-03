@@ -25,6 +25,7 @@
     border: 0.0625em solid;
     border-color: $background;
     color: $text-color;
+    transition: .3s ease background, .15s ease color;
     &:hover {
         background: $background;
         color: $hover-text-color;

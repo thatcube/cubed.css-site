@@ -1,14 +1,29 @@
-<div class="docs__grid">
-<nav class="docs__sidebar">
-  <ul>
-    <li><a routerLinkActive="active" routerLink="gettingstarted">Getting Started</a></li>
-    <li><a routerLinkActive="active" routerLink="button">Button</a></li>
-    <li><a routerLinkActive="active" routerLink="card">Card</a></li>
-    <li><a routerLinkActive="active" routerLink="form">Form</a></li>
-    <li><a routerLinkActive="active" routerLink="layout">Layout</a></li>
-  </ul>
-</nav>
-<article class="docs__content">
-<router-outlet></router-outlet>
-</article>
+<div class="docs__grid container">
+  <nav class="docs__sidebar">
+    <ul>
+      <li><a class="text fw500 margin-top" routerLinkActive="active" routerLink="elements">Elements</a></li>
+      <ul>
+        <li><a routerLinkActive="active" routerLink="button">Button</a></li>
+      </ul>
+      <li><a class="text fw500 margin-top" routerLinkActive="active" routerLink="components">Components</a></li>
+      <ul>
+        <li><a routerLinkActive="active" routerLink="card">Card</a></li>
+      </ul>
+      <li><a class="text fw500 margin-top" routerLinkActive="active" routerLink="form">Form</a></li>
+      <ul>
+        <li><a routerLinkActive="active" routerLink="checkbox">Checkbox</a></li>
+        <li><a routerLinkActive="active" routerLink="radio">Radio</a></li>
+        <li><a routerLinkActive="active" routerLink="input">Input</a></li>
+      </ul>
+      <li><a class="text fw500 margin-top" routerLinkActive="active" routerLink="layout">Layout</a></li>
+      <ul>
+        <li><a routerLinkActive="active" routerLink="breakpoints">Breakpoints</a></li>
+        <li><a routerLinkActive="active" routerLink="columns">Columns</a></li>
+      </ul>
+      <li><a class="text fw500 margin-top" routerLinkActive="active" routerLink="utilities">Utilities</a></li>
+    </ul>
+  </nav>
+  <div [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''" class="docs__content">
+    <router-outlet class="router-wrapper" #o="outlet"></router-outlet>
+  </div>
 </div>

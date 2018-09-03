@@ -1,8 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { fadeAnimation } from './animations';
+
 @Component({
   selector: 'body',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [fadeAnimation]
 })
 export class AppComponent {
   title = 'Cubed CSS';

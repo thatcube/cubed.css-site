@@ -1,12 +1,12 @@
 <header class="row no-margin middle">
   <nav class="col no-padding container">
     <ul class="row middle">
-      <li class="col xs-8 sm-4"><a class="link text -lg -bold" routerLink="/">Cubed <span class="text -primary">CSS</span></a></li>
-      <li class="col sm-offset-6 xs-4 sm-2 center"><a class="link text -md -fw300" routerLinkActive="active" routerLink="/docs">Docs</a></li>
-      <!-- <li class="col xs-3 sm-2 center"><a class="link text -md -fw300" routerLinkActive="active" routerLink="/about">About</a></li> -->
+      <li class="col xs8 sm4"><a class="link text lg fw600" routerLink="/">Cubed <span class="text primary">CSS</span></a></li>
+      <li class="col offset-sm6 xs4 sm2 center"><a class="link text md fw300" routerLinkActive="active" routerLink="/docs">Docs</a></li>
+      <!-- <li class="col xs-3 sm-2 center"><a class="link text -md fw300" routerLinkActive="active" routerLink="/about">About</a></li> -->
     </ul>
   </nav>
 </header>
-<div class="content container">
-<router-outlet></router-outlet>
+<div [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''" class="content router-wrapper">
+<router-outlet #o="outlet"></router-outlet>
 </div>

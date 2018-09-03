@@ -12,13 +12,13 @@ $gray-dark: mix($gray, $black, 50%);
 
 $primary: #007fff;
 $complementary: #007bff;
-$secondary: #d63665;
+$secondary: #e8006d;
 
 // feedback colors
-$success: #008728;
+$success: #00c73c;
 $info: #4ca5ff;
-$warning: #f7ba45;
-$danger: #b80000;
+$warning: #F0544F;
+$danger: #ff0000;
 $dark: #333;
 
 $background: mix(mix($primary, $white, 5%), #eee, 50%);
@@ -31,8 +31,12 @@ $border-radius-large: 1em;
 
 
 // breakpoints
-$bp-xl: 65.625rem; // 1050px
-$bp-lg: 56.25rem;  // 900px
-$bp-md: 48rem;     // 768px
-$bp-sm: 37.55rem;  // 600px
-$bp-xs: 25rem;     // 400px
+$bp-xl: 75rem; // 1200px
+$bp-lg: 62rem; // 992px
+$bp-md: 48rem; // 768px
+$bp-sm: 36rem; // 576px
+$bp-xs: 24rem; // 384px
+
+
+// layout variables
+$row-gap: 0.75rem;

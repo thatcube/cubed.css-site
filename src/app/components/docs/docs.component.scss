@@ -1,38 +1,70 @@
 @import 'variables';
 
 .docs__grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 10rem 1.7fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "docs__sidebar docs__content";
-}
-  
-.docs__sidebar { 
-    grid-area: docs__sidebar;
-    padding: 1rem 1rem 1rem 0;
-    ul {
-        padding: 0;
-        margin: 0;
-        li {
-            a {
-                color: $gray;
-                text-decoration: none;
-                &:hover, &:focus {
-                    color: $black;
-                }
-                &.active {
-                    color: $black;
-                    font-weight: bold;
-                }
-                padding: 0.5rem 0;
-                display: block;
-            }
-        }
-    }
+  display: grid;
+  height: 100%;
+  min-height: calc(100vh - 5rem);
+  grid-template-columns: 10rem 1.7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "docs__sidebar docs__content";
 }
 
-.docs__content { 
-    padding: 1rem; 
-    grid-area: docs__content; 
+.docs__sidebar {
+  grid-area: docs__sidebar;
+  padding: 1rem 1rem 1rem 0;
+  border-right: 0.125rem solid $background-light;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      padding-left: 1rem;
+
+      li a {
+        font-size: 0.875rem;
+        color: $gray;
+        &:hover,
+        &:focus {
+          color: $black;
+        }
+
+        &.active {
+          color: $primary;
+          font-weight: normal;
+        }
+      }
+    }
+
+    li {
+      a {
+        color: $gray-dark;
+        text-decoration: none;
+        transition: .3s ease color;
+
+        &:hover,
+        &:focus {
+          color: $black;
+        }
+
+        &.active {
+          color: $primary;
+          font-weight: bold;
+        }
+
+        padding: 0.5rem 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.docs__content {
+  grid-area: docs__content;
+  position: relative;
+  margin: 1rem;
+
+  li+li {
+    margin-top: $row-gap;
+  }
 }

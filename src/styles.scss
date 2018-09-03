@@ -1,14 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import "assets/scss/cubed-css/cubed";
 
 li {
-    list-style: none;
+  list-style: none;
 }
+
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr;
-    grid-template-areas: "header" "content";
-    color: $gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr;
+  grid-template-areas: "header""content";
+  color: $gray;
+}
+
+a.block {
+  color: $gray;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: $border-radius-large;
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    transform: scale(1.1);
+    transition-duration: .2s;
+    transition-property: background, transform;
+  }
+
+  &:hover {
+    &:before {
+      transform: scale(1);
+      background: $background-light;
+    }
+
+    .block__title {
+      color: $primary;
+    }
+
+    .block__subtitle {
+      color: $dark;
+    }
+  }
+
+  &.sass:hover {
+    .block__title {
+      color: #CF649A;
+    }
+  }
+
+  svg {
+    height: 3.5rem;
+
+    &.accessible-icon {
+      color: $primary;
+    }
+  }
+}
+
+.router-wrapper {
+    position: relative;
 }

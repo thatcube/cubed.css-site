@@ -1,16 +1,17 @@
 @import "normalize";
 @import "variables";
 
-@import "mixins/buttons";
+@import "mixins/button";
 @import "mixins/breakpoints";
 
-@import "buttons";
+@import "button";
 @import "card";
 @import "checkboxes";
 @import "grid";
 @import "hero";
 @import "inputs";
 @import "radio";
+@import "table";
 @import "typography";
 @import "utilities";
 
