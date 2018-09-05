@@ -16,6 +16,7 @@ import { CheckboxComponent } from './components/form/checkbox/checkbox.component
 import { ElementsComponent } from './components/elements/elements.component';
 import { InputComponent } from './components/form/input/input.component';
 import { UtilitiesComponent } from './components/utilities/utilities.component';
+import { CustomizeComponent } from './components/customize/customize.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,10 +36,11 @@ const routes: Routes = [
       { path: 'components', component: ComponentsComponent },
       { path: 'checkbox', component: CheckboxComponent },
       { path: 'elements', component: ElementsComponent },
-      { path: 'utilities', component: UtilitiesComponent }
+      { path: 'utilities', component: UtilitiesComponent },
+      { path: 'customize', component: CustomizeComponent }
     ]
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

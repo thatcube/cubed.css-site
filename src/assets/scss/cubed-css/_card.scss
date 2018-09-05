@@ -9,29 +9,29 @@
 
     //reset line-height to fix placement of images
     line-height: 0;
-    &__img {
+    &-img {
         border-radius: 0;
         width: 100%;
         //images can be placed at the top or bottom of a card
-        &--top {
+        &.top {
             border-top-right-radius: $border-radius-large;
             border-top-left-radius: $border-radius-large;
         }
-        &--bottom {
+        &.bottom {
             border-bottom-right-radius: $border-radius-large;
             border-bottom-left-radius: $border-radius-large;
         }
     }
-    &__body {
+    &-body {
         padding: 1.875em;
     }
-    &__text {
+    &-text {
         line-height: 2;
     }
-    &__subtitle {
+    &-subtitle {
         font-weight: normal;
     }
-    &__header {
+    &-header {
         padding: 1em 1.875em;
     }
 

@@ -17,12 +17,12 @@ export const fadeAnimation = trigger('fadeAnimation', [
         ),
         query(
             ':leave',
-            [style({ opacity: 1 }), animate('0.2s', style({ opacity: 0 }))],
+            [style({ opacity: 1 }), animate('0.15s', style({ opacity: 0 }))],
             { optional: true }
         ),
         query(
             ':enter',
-            [style({ opacity: 0 }), animate('0.2s', style({ opacity: 1 }))],
+            [style({ opacity: 0 }), animate('0.15s', style({ opacity: 1 }))],
             { optional: true }
         )
     ])
@@ -30,7 +30,7 @@ export const fadeAnimation = trigger('fadeAnimation', [
 
 export const docsAnimation = trigger('fadeAnimation', [
     transition('* => *', [
-        query(':enter, :leave', style({ position: 'absolute'})
+        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 })
             , { optional: true }),
         query(
             ':enter',
@@ -39,12 +39,12 @@ export const docsAnimation = trigger('fadeAnimation', [
         ),
         query(
             ':leave',
-            [style({ opacity: 1 }), animate('0.2s', style({ opacity: 0 }))],
+            [style({ opacity: 1 }), animate('0.15s', style({ opacity: 0 }))],
             { optional: true }
         ),
         query(
             ':enter',
-            [style({ opacity: 0 }), animate('0.2s', style({ opacity: 1 }))],
+            [style({ opacity: 0 }), animate('0.15s', style({ opacity: 1 }))],
             { optional: true }
         )
     ])

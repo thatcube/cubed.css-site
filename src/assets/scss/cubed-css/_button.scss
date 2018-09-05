@@ -17,101 +17,101 @@
     &:hover {
         text-decoration: none;
     }
-    &.-primary {
+    &.primary {
         @include button-standard($white, $primary);
-        &.-outline {
+        &.outline {
             @include button-outline($white, $primary, $primary);
         }
-        &.-link {
+        &.link {
             @include button-link($primary);
         }
     }
-    &.-success {
+    &.success {
         @include button-standard($white, $success);
-        &.-outline {
+        &.outline {
             @include button-outline($white, $success, $success);
         }
-        &.-link {
+        &.link {
             @include button-link($success);
         }
     }
-    &.-secondary {
+    &.secondary {
         @include button-standard($white, $secondary);
-        &.-outline {
+        &.outline {
             @include button-outline($white, $secondary, $secondary);
         }
-        &.-link {
+        &.link {
             @include button-link($secondary);
         }
     }
-    &.-info {
-        @include button-standard(#2c2c2c, $info);
-        &.-outline {
-            @include button-outline(#2c2c2c, #0074e8, $info);
+    &.info {
+        @include button-standard($dark, $info);
+        &.outline {
+            @include button-outline($dark, mix($info, $dark, 47.5%), $info);
         }
-        &.-link {
-            @include button-link(#0074e8);
-        }
-    }
-    &.-warning {
-        @include button-standard(#2c2c2c, $warning);
-        &.-outline {
-            @include button-outline(#2c2c2c, #a26b00, $warning);
-        }
-        &.-link {
-            @include button-link(#a26b00);
+        &.link {
+            @include button-link($info);
         }
     }
-    &.-danger {
-        @include button-standard(#f0f0f0, $danger);
-        &.-outline {
-            @include button-outline(#f0f0f0, $danger, $danger);
+    &.warning {
+        @include button-standard($dark, $warning);
+        &.outline {
+            @include button-outline($dark, mix($warning, $dark, 47.5%), $warning);
         }
-        &.-link {
+        &.link {
             @include button-link($danger);
         }
     }
-    &.-light {
+    &.danger {
+        @include button-standard($white, $danger);
+        &.outline {
+            @include button-outline($white, $danger, $danger);
+        }
+        &.link {
+            @include button-link($danger);
+        }
+    }
+    &.light {
         @include button-standard($dark, $white);
-        &.-outline {
+        &.outline {
             @include button-outline($dark, $white, $white);
         }
-        &.-link {
+        &.link {
             @include button-link($white);
         }
     }
-    &.-dark {
+    &.dark {
         @include button-standard($white, $dark);
-        &.-outline {
+        &.outline {
             @include button-outline($white, $dark, $dark);
         }
-        &.-link {
+        &.link {
             @include button-link($dark);
         }
     }
-    &.-round {
+    &.round {
         border-radius: 10rem;
         padding: 0.75em 2.5em;
     }
-    &.-square {
+    &.square {
         border-radius: 0;
     }
-    &.-xs {
+    &.xs {
         font-size: 0.75em;
         padding: 0.5em 1em;
     }
-    &.-sm {
+    &.sm {
         font-size: 0.875rem;
         padding: 0.625em 1.5em;
     }
-    &.-md {
+    &.md {
         font-size: 1rem;
     }
-    &.-lg {
+    &.lg {
         font-size: 1.125rem;
         padding: 0.875em 2.5em;
     }
-    &.-xl {
+    &.xl {
         font-size: 1.25rem;
         padding: 1em 3em;
     }

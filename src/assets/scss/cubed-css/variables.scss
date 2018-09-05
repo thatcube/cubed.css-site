@@ -3,6 +3,9 @@
 // For example, 8px is 0.5rem.
 // The advantage of using REM's is that someone can change their font-size on their browser, and the entire website will respond to that change
 
+//fonts
+$font-family-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
 //colors
 $black: #000;
 $white: #fff;
@@ -15,10 +18,10 @@ $complementary: #007bff;
 $secondary: #e8006d;
 
 // feedback colors
-$success: #00c73c;
+$success: #008000;
 $info: #4ca5ff;
-$warning: #F0544F;
-$danger: #ff0000;
+$warning: #ffb600;
+$danger: #d32d27;
 $dark: #333;
 
 $background: mix(mix($primary, $white, 5%), #eee, 50%);

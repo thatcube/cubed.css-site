@@ -21,6 +21,7 @@ import { InputComponent } from './components/form/input/input.component';
 import { ElementsComponent } from './components/elements/elements.component';
 import { ComponentsComponent } from './components/components/components.component';
 import { UtilitiesComponent } from './components/utilities/utilities.component';
+import { CustomizeComponent } from './components/customize/customize.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { UtilitiesComponent } from './components/utilities/utilities.component';
     ElementsComponent,
     ComponentsComponent,
     UtilitiesComponent,
+    CustomizeComponent,
   ],
   imports: [
     BrowserModule,

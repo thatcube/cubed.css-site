@@ -4,34 +4,57 @@
   display: grid;
   height: 100%;
   min-height: calc(100vh - 5rem);
-  grid-template-columns: 10rem 1.7fr;
+  grid-template-columns: 12rem 1.7fr;
   grid-template-rows: 1fr;
   grid-template-areas: "docs__sidebar docs__content";
 }
 
 .docs__sidebar {
   grid-area: docs__sidebar;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
   border-right: 0.125rem solid $background-light;
+  position: fixed;
+  top: 5rem;
+  width: 12rem;
+  bottom: 0;
+  overflow: auto;
 
   ul {
     margin: 0;
     padding: 0;
 
     ul {
-      padding-left: 1rem;
+      padding-left: 1.5rem;
 
       li a {
         font-size: 0.875rem;
         color: $gray;
+        position: relative;
+        font-weight: 400;
+
         &:hover,
         &:focus {
           color: $black;
         }
 
+        &:before {
+          transition: .2s ease opacity;
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -1.5rem;
+          width: 1rem;
+          border-top: 0.125rem solid $primary;
+          opacity: 0;
+        }
+
         &.active {
-          color: $primary;
-          font-weight: normal;
+          color: $dark;
+
+          &:before {
+            opacity: 1;
+          }
         }
       }
     }
@@ -41,6 +64,7 @@
         color: $gray-dark;
         text-decoration: none;
         transition: .3s ease color;
+        font-weight: 600;
 
         &:hover,
         &:focus {
@@ -49,7 +73,6 @@
 
         &.active {
           color: $primary;
-          font-weight: bold;
         }
 
         padding: 0.5rem 0;
@@ -62,7 +85,7 @@
 .docs__content {
   grid-area: docs__content;
   position: relative;
-  margin: 1rem;
+  margin: 0 2rem;
 
   li+li {
     margin-top: $row-gap;
