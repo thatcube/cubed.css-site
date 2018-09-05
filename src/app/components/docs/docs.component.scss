@@ -22,15 +22,18 @@
   ul {
     margin: 0;
     padding: 0;
+    & > li > a {
+      text-transform: uppercase;
+    }
 
     ul {
       padding-left: 1.5rem;
-
       li a {
         font-size: 0.875rem;
         color: $gray;
         position: relative;
         font-weight: 400;
+        text-transform: capitalize;
 
         &:hover,
         &:focus {

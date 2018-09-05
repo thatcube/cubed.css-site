@@ -28,3 +28,14 @@ header {
     position: relative;
     background: $background-light;
 }
+
+.cubed-title {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.cubed-logo {
+    height: 2.5rem;
+    margin-right: 1rem;
+}
