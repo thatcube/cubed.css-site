@@ -3,14 +3,14 @@ header  {
     li {
         a {
             text-decoration: none;
-            color: mix($gray, $white, 85%);
+            color: rgba($white, 0.75);
             transition: .3s ease all;
             &.active {
-                color: $black;
+                color: $white;
                 font-weight: 500;
             }
             &:hover {
-                color: $gray-dark;
+                color: $white;
             }
         }
     }
@@ -26,13 +26,16 @@ header {
     grid-area: header;                 
     width: 100%;
     position: relative;
-    background: $background-light;
+    background: $primary;
 }
 
 .cubed-title {
     display: flex;
     align-items: center;
     padding: 1rem 0;
+    span {
+        color: $white;
+    }
 }
 
 .cubed-logo {

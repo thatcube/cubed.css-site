@@ -8,7 +8,7 @@ li {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr;
+  grid-template-rows: 4rem 1fr;
   grid-template-areas: "header""content";
   color: $gray;
 }
