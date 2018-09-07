@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fadeAnimation, docsAnimation } from '../../animations';
+import { docsAnimation } from '../../animations';
 
 @Component({
   selector: 'mp-docs',
