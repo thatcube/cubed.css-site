@@ -2,7 +2,97 @@
 @import 'mixins/breakpoints';
 
 @include until(sm) {
-    .hero .btn {
-        width: 100%;
+  .hero .btn {
+    width: 100%;
+  }
+}
+
+.cubed-hero {
+  background: $primary;
+  background: linear-gradient(to bottom, $primary, $primary-darker);
+  color: $white;
+
+  &-tagline {
+    max-width: $bp-sm;
+    display: inline-block;
+    @include until(sm) {
+        font-size: 1.6rem;
     }
+  }
+
+  &-container {
+    min-height: calc(100vh - 4rem);
+    display: grid;
+    grid-template-rows: 1.4fr 0.6fr;
+    grid-template-areas: "cubed-logo-container""nav";
+    @include until(sm) {
+        grid-template-rows: 1fr 1.25fr;
+    }
+  }
+
+  nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "block";
+    grid-gap: 1rem;
+    @include until(sm){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .block {
+      &:before {
+        display: none;
+      }
+
+      &:hover {
+
+        svg,
+        .block__subtitle {
+          color: $white;
+        }
+      }
+
+      transition: .3s ease color;
+
+      &__title {
+        color: $white;
+        font-size: 1.5rem;
+      }
+
+      align-self: center;
+      color: inherit;
+
+      svg {
+        color: rgba($white, 0.5);
+      }
+
+      &__subtitle {
+        color: rgba($white, 0.75);
+      }
+    }
+  }
+
+  .cubed-logo-container {
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    grid-area: cubed-logo-container;
+
+    & .cubed-logo.-hero {
+      height: 10rem;
+      width: 100%;
+      color: rgba($white, 0.75);
+    }
+  }
+
+  .hero-buttons {
+    .btn:first-of-type {
+      margin-right: 1rem;
+    }
+  }
 }

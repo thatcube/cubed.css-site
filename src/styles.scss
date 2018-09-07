@@ -117,3 +117,15 @@ a.block {
     color: $dark;
   }
 }
+
+.docs-hero {
+  h1 {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-top: 0.5rem;
+  }
+  .hero-body {
+    padding: 3rem 0;
+  }
+}

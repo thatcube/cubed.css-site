@@ -19,6 +19,7 @@ import { UtilitiesComponent } from './components/utilities/utilities.component';
 import { CustomizeComponent } from './components/customize/customize.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   {
     path: 'docs', component: DocsComponent, children: [
