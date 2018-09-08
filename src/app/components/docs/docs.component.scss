@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins/breakpoints';
 
 .docs__grid {
   display: grid;
@@ -8,6 +9,10 @@
   grid-template-rows: 1fr;
   grid-template-areas: "docs__sidebar docs__content";
   justify-items: center;
+  @include until(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "docs__content";
+  }
 }
 
 .docs__sidebar {
@@ -16,10 +21,20 @@
   border-right: 0.0625rem solid $background-light;
   position: fixed;
   top: 4rem;
+  left: 0;
   width: 14rem;
   bottom: 0;
   overflow: auto;
-  background: $background-light;
+    background: $background-dark;
+  
+  @include until(md) {
+      transition: .3s ease transform;
+      transform: translateX(-100%);
+    
+    &.is-active {
+      transform: translateX(0);
+    }
+  }
 
   ul {
     margin: 0;
@@ -94,5 +109,18 @@
 
   li+li {
     margin-top: $row-gap;
+  }
+}
+
+.nav-toggle-container {
+  display: none;
+  position: fixed;
+  top:1rem;
+  right: 1rem;
+  a  {
+    color: $white;
+  }
+  @include until(md) {
+    display: block;
   }
 }

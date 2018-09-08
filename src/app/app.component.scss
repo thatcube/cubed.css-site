@@ -29,7 +29,10 @@ header {
 
       &.active {
         color: $white;
-        font-weight: 500;
+        font-weight: bold;
+        @include until(md) {
+            display: none;
+        }
       }
 
       &:hover {

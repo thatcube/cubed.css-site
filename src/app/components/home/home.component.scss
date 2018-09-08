@@ -10,6 +10,7 @@
 .cubed-hero {
   background: $primary;
   background: linear-gradient(to bottom, $primary, $primary-darker);
+  background: url("../../../assets/img/cubed-hero3.svg") 50% 2vh no-repeat,linear-gradient(to bottom, $primary, $primary-darker) 0 0 no-repeat;
   color: $white;
 
   &-tagline {

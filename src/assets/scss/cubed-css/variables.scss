@@ -28,6 +28,7 @@ $dark: #333;
 
 $background: mix(mix($primary, $white, 5%), #eee, 50%);
 $background-light: mix(rgba($primary, 0.05), rgba($dark, 0.05), 50%);
+$background-dark: mix($primary, $white, 2%);
 
 // border radii
 $border-radius-small: .375em;
