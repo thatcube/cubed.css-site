@@ -9,7 +9,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "docs__sidebar docs__content";
   justify-items: center;
-  @include until(md) {
+  @include until(m) {
     grid-template-columns: 1fr;
     grid-template-areas: "docs__content";
   }
@@ -27,7 +27,7 @@
   overflow: auto;
     background: $background-dark;
   
-  @include until(md) {
+  @include until(m) {
       transition: .3s ease transform;
       transform: translateX(-100%);
     
@@ -104,7 +104,7 @@
 
 .docs__content {
   grid-area: docs__content;
-  position: relative;
+  // position: relative;
   margin: 0 2rem;
 
   li+li {
@@ -120,7 +120,7 @@
   a  {
     color: $white;
   }
-  @include until(md) {
+  @include until(m) {
     display: block;
   }
 }

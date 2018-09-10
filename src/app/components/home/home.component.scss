@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins/breakpoints';
 
-@include until(sm) {
+@include until(s) {
   .hero .btn {
     width: 100%;
   }
@@ -14,9 +14,9 @@
   color: $white;
 
   &-tagline {
-    max-width: $bp-sm;
+    max-width: $bp-s;
     display: inline-block;
-    @include until(sm) {
+    @include until(s) {
         font-size: 1.6rem;
     }
   }
@@ -26,7 +26,7 @@
     display: grid;
     grid-template-rows: 1.4fr 0.6fr;
     grid-template-areas: "cubed-logo-container""nav";
-    @include until(sm) {
+    @include until(s) {
         grid-template-rows: 1fr 1.25fr;
     }
   }
@@ -38,7 +38,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "block";
     grid-gap: 1rem;
-    @include until(sm){
+    @include until(s){
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }

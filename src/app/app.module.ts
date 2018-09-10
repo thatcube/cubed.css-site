@@ -22,6 +22,7 @@ import { ElementsComponent } from './components/elements/elements.component';
 import { ComponentsComponent } from './components/components/components.component';
 import { UtilitiesComponent } from './components/utilities/utilities.component';
 import { CustomizeComponent } from './components/customize/customize.component';
+import { SidebarJSModule } from 'ng-sidebarjs';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CustomizeComponent } from './components/customize/customize.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SidebarJSModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

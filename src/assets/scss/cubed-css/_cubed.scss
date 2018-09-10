@@ -15,10 +15,6 @@
 @import "typography";
 @import "utilities";
 
-.wrap {
-    max-width: $bp-lg;
-}
-
 code {
     background-color: mix($background, $gray-light, 95%);
     color: $primary;

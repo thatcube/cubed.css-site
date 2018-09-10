@@ -4,7 +4,7 @@
 header {
   padding: 0 2rem;
 
-  @include until(sm) {
+  @include until(s) {
     padding: 0 1rem;
   }
 
@@ -30,7 +30,7 @@ header {
       &.active {
         color: $white;
         font-weight: bold;
-        @include until(md) {
+        @include until(m) {
             display: none;
         }
       }
