@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3000px" height="1600px" viewBox="0 0 3000 1600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="34.0236636%" fx="50%" fy="34.0236636%" r="92.7377588%" gradientTransform="translate(0.500000,0.340237),scale(0.547482,1.000000),rotate(90.000000),translate(-0.500000,-0.340237)" id="radialGradient-1">
+            <stop stop-color="#166DFF" offset="0%"></stop>
+            <stop stop-color="#1935BF" offset="100%"></stop>
+        </radialGradient>
+        <polygon id="path-2" points="0 0 3138 8.9407648e-15 3121 1718 0 1718"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cubed-bg" transform="translate(-49.000000, -43.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Combined-Shape" fill="url(#radialGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+            <path d="M12,1448 C519.623711,1568 1029.95704,1628 1543,1628 C2056.04296,1628 2566.37629,1568 3074,1448 L3074,1697 L12,1697 L12,1448 Z" id="curve" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

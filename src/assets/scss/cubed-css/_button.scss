@@ -35,15 +35,6 @@
             @include button-link($success);
         }
     }
-    &.secondary {
-        @include button-standard($white, $secondary);
-        &.outline {
-            @include button-outline($white, $secondary, $secondary);
-        }
-        &.link {
-            @include button-link($secondary);
-        }
-    }
     &.info {
         @include button-standard($dark, $info);
         &.outline {

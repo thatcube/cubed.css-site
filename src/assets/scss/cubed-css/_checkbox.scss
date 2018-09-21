@@ -72,8 +72,8 @@ label{
     }
     &:focus {
         & + label .checkbox-box {
-            border: 0.0625rem solid #007fff;
-            box-shadow: inset 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.13), 0 0 0.5rem rgb(102, 175, 233);
+            border: 0.0625rem solid $primary;
+            box-shadow: inset 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.13), 0 0 0.5rem $primary;
         }
     }
     &:not(:checked) {

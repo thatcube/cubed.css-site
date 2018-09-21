@@ -14,19 +14,14 @@ $gray-light: mix($gray, $white, 50%);
 $gray-dark: mix($gray, $black, 50%);
 
 // $primary: #007fff;
-$primary: #0074e8;
-$primary-darker: #0065cc;
-$complementary: #007bff;
-$secondary: #e8006d;
+$primary: #166dff;
+$primary-darker: #1935BF;
 
 // feedback colors
-$success: #008000;
 $success: #17cf73;
 $info: #4ca5ff;
-$warning: #ffb600;
-$warning: #f5b83d;
-$danger: #d32d27;
-$danger: #f93131;
+$warning: #f5bb46;
+$danger: #e22942;
 $dark: #333;
 
 $background: mix(mix($primary, $white, 5%), #eee, 50%);

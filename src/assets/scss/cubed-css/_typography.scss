@@ -4,6 +4,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    line-height: 1.5;
 }
 
 .text {
@@ -55,9 +56,6 @@
     // colors
     &.primary {
         color: $primary;
-    }
-    &.secondary {
-        color: $secondary;
     }
     &.dark {
         color: $dark;

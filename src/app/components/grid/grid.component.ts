@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'mp-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  templateUrl: './grid.component.html',
+  styleUrls: ['./grid.component.scss']
 })
-export class LayoutComponent implements OnInit {
+export class GridComponent implements OnInit {
 
   constructor() { }
 

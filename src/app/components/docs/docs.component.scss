@@ -9,6 +9,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "docs__sidebar docs__content";
   justify-items: center;
+
   @include until(m) {
     grid-template-columns: 1fr;
     grid-template-areas: "docs__content";
@@ -19,18 +20,14 @@
   grid-area: docs__sidebar;
   padding: 1rem 2rem;
   border-right: 0.0625rem solid $background-light;
-  position: fixed;
-  top: 4rem;
-  left: 0;
   width: 14rem;
-  bottom: 0;
   overflow: auto;
-    background: $background-dark;
-  
+  background: $background-dark;
+
   @include until(m) {
-      transition: .3s ease transform;
-      transform: translateX(-100%);
-    
+    transition: .3s ease transform;
+    transform: translateX(-100%);
+
     &.is-active {
       transform: translateX(0);
     }
@@ -39,12 +36,13 @@
   ul {
     margin: 0;
     padding: 0;
+
     // & > li > a {
     //   text-transform: uppercase;
     // }
-
     ul {
       padding-left: 1.5rem;
+
       li a {
         font-size: 0.875rem;
         color: $gray;
@@ -115,12 +113,19 @@
 .nav-toggle-container {
   display: none;
   position: fixed;
-  top:1rem;
+  top: 1rem;
   right: 1rem;
-  a  {
+
+  a {
     color: $white;
   }
+
   @include until(m) {
     display: block;
   }
+}
+
+header {
+  border-bottom: 0.0625rem solid rgba($primary, 0.25);
+  // box-shadow: 0 0 3rem rgba(mix($primary, $white, 50%), 0.45);
 }

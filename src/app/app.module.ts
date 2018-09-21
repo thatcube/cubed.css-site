@@ -12,9 +12,7 @@ import { GettingStartedComponent } from './components/getting-started/getting-st
 import { CardComponent } from './components/components/card/card.component';
 import { ButtonComponent } from './components/elements/button/button.component';
 import { FormComponent } from './components/form/form.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { BreakpointsComponent } from './components/layout/breakpoints/breakpoints.component';
-import { ColumnsComponent } from './components/layout/columns/columns.component';
+import { GridComponent } from './components/grid/grid.component';
 import { CheckboxComponent } from './components/form/checkbox/checkbox.component';
 import { RadioComponent } from './components/form/radio/radio.component';
 import { InputComponent } from './components/form/input/input.component';
@@ -35,9 +33,8 @@ import { SidebarJSModule } from 'ng-sidebarjs';
     CardComponent,
     ButtonComponent,
     FormComponent,
-    LayoutComponent,
-    BreakpointsComponent,
-    ColumnsComponent,
+    GridComponent,
+    GridComponent,
     CheckboxComponent,
     RadioComponent,
     InputComponent,

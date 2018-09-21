@@ -7,9 +7,7 @@ import { GettingStartedComponent } from './components/getting-started/getting-st
 import { CardComponent } from './components/components/card/card.component';
 import { ButtonComponent } from './components/elements/button/button.component';
 import { FormComponent } from './components/form/form.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { ColumnsComponent } from './components/layout/columns/columns.component';
-import { BreakpointsComponent } from './components/layout/breakpoints/breakpoints.component';
+import { GridComponent } from './components/grid/grid.component';
 import { RadioComponent } from './components/form/radio/radio.component';
 import { ComponentsComponent } from './components/components/components.component';
 import { CheckboxComponent } from './components/form/checkbox/checkbox.component';
@@ -28,9 +26,7 @@ const routes: Routes = [
       { path: 'button', component: ButtonComponent },
       { path: 'card', component: CardComponent },
       { path: 'form', component: FormComponent },
-      { path: 'layout', component: LayoutComponent },
-      { path: 'columns', component: ColumnsComponent },
-      { path: 'breakpoints', component: BreakpointsComponent },
+      { path: 'grid', component: GridComponent },
       { path: 'radio', component: RadioComponent },
       { path: 'input', component: InputComponent },
       { path: 'components', component: ComponentsComponent },
