@@ -27,9 +27,9 @@
         }
     }
     &.success {
-        @include button-standard($white, $success);
+        @include button-standard($dark, $success);
         &.outline {
-            @include button-outline($white, $success, $success);
+            @include button-outline($dark, mix($success, $dark, 40.0%), $success);
         }
         &.link {
             @include button-link($success);
